@@ -1,0 +1,143 @@
+:root {
+    --blanco:#FEFEFE;
+    --negro: #373435;
+    --gris:  #e2e2e3;
+    --rosa:  #FA979F;
+    --verde: #89C9C6;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+.navbar{ 
+    background-color: var(--gris);
+}
+
+.nav-link {
+    text-align: right;
+    color: var(--negro);
+    font-weight: 700;
+}
+
+.carousel-item{
+    margin-top: 20px;
+}
+
+
+.titulo-mis-servicios, .titulo-sobre-mi, .titulo-quienes-confian {
+    color: var(--verde);
+    font-weight: 700;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.contenedor-columnas-servicios {
+   display: flex;
+   justify-content: center;
+   
+}
+
+.bg-col {
+    background-color: var(--gris);
+    height: auto;
+    width: 500px;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 10px;
+
+}
+
+.seccion-personal {
+    background-color: var(--gris);
+    height: fit-content;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;   
+}
+
+.botones {
+    background-color: var(--rosa);
+    color: var(--blanco);
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: 700;
+    padding: 5px;
+    display: inline;
+    align-items: center;
+    
+}
+
+.fomrulario-contacto {
+    background-color: var(--verde);
+    margin: 30px;
+    padding: 20px;
+    color: var(--blanco);
+    font-weight: 700;
+    border-radius: 15px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.h2-formulario {
+    font-size: 45px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.clientes {
+    margin: 10px 0;
+    
+}
+
+.orientacion-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.logos_clientes {
+    width: 150px;
+    height: auto;
+}
+
+
+.footer {
+    background-color: var(--gris);
+    padding: 10px;
+    text-align: center;
+    margin-block-start: auto;
+
+}
+
+
+.logo-footer {
+    width: auto;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.elementos-footer {
+    padding-top: 5px;
+}
+
