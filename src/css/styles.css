@@ -24,35 +24,207 @@ body {
 }
 
 .navbar{ 
-    background-color: var(--gris);
+    background-color: #e2e2e3;
 }
 
-.nav-link {
+.nav-link, .nav-item {
+    font-size: 16px;
     text-align: right;
-    color: var(--negro);
+    color: #373435;
     font-weight: 700;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.carousel-item{
+
+.banner-item{
     margin-top: 20px;
+    width: 100%;
 }
 
 
-.titulo-mis-servicios, .titulo-sobre-mi, .titulo-quienes-confian {
-    color: var(--verde);
+.titulo-experiencia, .titulo-sobre-mi, .titulo-habilidades, .titulo-formacion, .titulo-proyectos {
+    color: #89C9C6;
     font-weight: 700;
+    padding: 20px;
     margin-top: 10px;
     text-align: center;
 }
 
-.contenedor-columnas-servicios {
-   display: flex;
-   justify-content: center;
+.sobre-mi-elementos {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.seccion-personal {
+    font-size: 16px;
+    background-color: #e2e2e3;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.card-fondo {
+    background-color: #e2e2e3;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 15px;
+    border: none;
+
+}
+
+.col-experiencia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
    
 }
 
+.boton-editar{
+    margin-top: 10px;
+    background-color:#89C9C6;
+    border-radius: 50%;
+    border: none;
+    padding: 5px;
+}
+
+.card-logos {
+    padding:5px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-logos-tamaños {
+    margin-top: 10px;
+    padding: 15px;
+}
+
+.titulo-lugar-de-trabajo {
+    color: #FA979F;
+    font-weight: 700;
+    text-align: left;
+}
+
+.card-parrafo {
+    text-align: left;
+    font-size: 16px;
+}
+
+.habilidades-h3 {
+    margin-top: 10px;
+    padding: 5px;
+    color: #FA979F;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.progress {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    position: relative;
+}
+.progress::after {
+    content:"";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 15px solid #e2e2e3;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.progress > span {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.progress .progress-left {
+    left: 0;
+
+}
+
+.progress .progress-bar {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 15px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+}
+
+.progress .progress-left .progress-bar {
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    transform-origin: center left;
+    -webkit-transform-origin: center left;
+}
+
+.progress .progress-right {
+    right: 0;    
+}
+
+.progress .progress-right .progress-bar {
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    transform-origin: center right;
+    -webkit-transform-origin: center right;
+    animation: loading-1 1.8s linear forwards;
+    
+}
+
+.progress .progress-value {
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    color: #89C9C6;
+    text-align: center;
+    position: absolute;
+}
+
+/**Color**/
+.progress.blue .progress-bar {
+    border-color: #FA979F;
+}
+
+.progress.blue .progress-left .progress-bar {
+    animation: loading-2 1.5s linear forwards 1.8s;
+}
+
+/**Animacion**/
+@keyframes loading-1 {
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(120deg);
+        -webkit-transform: rotate(120deg);
+    }  
+}
+
+
 .bg-col {
-    background-color: var(--gris);
+    background-color: #e2e2e3;
     height: auto;
     width: 500px;
     border-radius: 15px;
@@ -61,32 +233,39 @@ body {
 
 }
 
-.seccion-personal {
-    background-color: var(--gris);
-    height: fit-content;
-    border-radius: 15px;
-    margin: 10px;
-    padding: 10px;
-    text-align: center;   
-}
-
 .botones {
-    background-color: var(--rosa);
-    color: var(--blanco);
-    font-size: 18px;
+    background-color: #FA979F;
+    color: #FEFEFE;
+    font-size: 14px;
     border-radius: 5px;
     font-weight: 700;
     padding: 5px;
     display: inline;
     align-items: center;
+    text-decoration: none;
     
 }
 
-.fomrulario-contacto {
-    background-color: var(--verde);
-    margin: 30px;
+.proyectos {
+    background-color: #e2e2e3;
+    border-radius: 15px;
+    border: none;
+    font-size: 16px;
+    margin: 15px;
     padding: 20px;
-    color: var(--blanco);
+}
+
+.proyectos h5 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #FA979F;
+}
+
+.fomrulario-contacto {
+    background-color: #89C9C6;
+    margin: 20px;
+    padding: 20px;
+    color: #FEFEFE;
     font-weight: 700;
     border-radius: 15px;
     margin-inline: auto;
@@ -105,25 +284,9 @@ body {
     margin-right: 15px;
 }
 
-.clientes {
-    margin: 10px 0;
-    
-}
-
-.orientacion-logos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.logos_clientes {
-    width: 150px;
-    height: auto;
-}
-
 
 .footer {
-    background-color: var(--gris);
+    background-color: #e2e2e3;
     padding: 10px;
     text-align: center;
     margin-block-start: auto;
@@ -138,6 +301,44 @@ body {
 }
 
 .elementos-footer {
-    padding-top: 5px;
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+.elementos-loguin {
+    margin-top: 250px;
+    width: 300px;
+    height: 350px;
+    background: #89C9C6;
+    color: #FEFEFE;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.elementos-loguin h2 {
+    padding: 20px;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.elementos-loguin label{
+    padding: 5px;
+    font-weight: 700;
+
+}
+
+.elementos-loguin input {
+    border: none;
+    border-bottom: 1px solid #FEFEFE;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #FEFEFE;
+    font-size: 18px;
 }
 
