@@ -3,10 +3,12 @@
         <h2 class="titulo-sobre-mi">SOBRE MI</h2>
         <div class="row align-items-center">
             <div class="col-md-3 sobre-mi-elementos">
-                <img src="assets/mica_foto2.png" width="250" height="250px">
+               <img
+                [src]="miPortfolio.fotoPersonal" width="250" height="250px">
             </div>
             <div class="col-md-9  seccion-personal">
-                <p>Soy Micaela Montali. Full Stack Developer Jr.</p>
+                <p>{{miPortfolio.name}}</p>
+                <p>{{miPortfolio.ocupation}}</p>
                 <p>Desde hace 12 años me dedico la docencia en el campo de la Educación Tecnológica. Dí clases
                     en los distintos niveles de la educación formal.</p>
                 <p>En el área de la Publicidad me dedico al diseño gráfico y la comunicación. Armando
@@ -17,3 +19,4 @@
         </div>
     </div>
 </section>
+

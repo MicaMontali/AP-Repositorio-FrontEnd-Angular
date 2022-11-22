@@ -1,103 +1,153 @@
-<section>
-    <div class="container">
-        <h2 class="titulo-habilidades">HABILIDADES ADQUIRIDAS</h2>
-        <div class="row">
-            <div class="col-md-3 col-sm-6">
-                <h3 class="habilidades-h3">HTML5</h3>
-                <div class="progress blue">
-                    <span class="progress-left">
-                        <span class="progress-bar"></span>
-                    </span>
-                    <span class="progress-right">
-                        <span class="progress-bar"></span>
-                    </span>
-                    <div class="progress-value">Intermedio</div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <h3 class="habilidades-h3">CSS</h3>
-                <div class="progress blue">
-                    <span class="progress-left">
-                        <span class="progress-bar"></span>
-                    </span>
-                    <span class="progress-right">
-                        <span class="progress-bar"></span>
-                    </span>
-                    <div class="progress-value">Intermedio</div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <h3 class="habilidades-h3">JAVASCRIPT</h3>
-                <div class="progress blue">
-                    <span class="progress-left">
-                        <span class="progress-bar"></span>
-                    </span>
-                    <span class="progress-right">
-                        <span class="progress-bar"></span>
-                    </span>
-                    <div class="progress-value">Principiante</div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <h3 class="habilidades-h3">TYPESCRIPT</h3>
-                <div class="progress blue">
-                    <span class="progress-left">
-                        <span class="progress-bar"></span>
-                    </span>
-                    <span class="progress-right">
-                        <span class="progress-bar"></span>
-                    </span>
-                    <div class="progress-value">Principiante</div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <h3 class="habilidades-h3">ANGULAR</h3>
-                <div class="progress blue">
-                    <span class="progress-left">
-                        <span class="progress-bar"></span>
-                    </span>
-                    <span class="progress-right">
-                        <span class="progress-bar"></span>
-                    </span>
-                    <div class="progress-value">Principiante</div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <h3 class="habilidades-h3">MYSQL</h3>
-                <div class="progress blue">
-                    <span class="progress-left">
-                        <span class="progress-bar"></span>
-                    </span>
-                    <span class="progress-right">
-                        <span class="progress-bar"></span>
-                    </span>
-                    <div class="progress-value">Principiante</div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <h3 class="habilidades-h3">JAVA</h3>
-                <div class="progress blue">
-                    <span class="progress-left">
-                        <span class="progress-bar"></span>
-                    </span>
-                    <span class="progress-right">
-                        <span class="progress-bar"></span>
-                    </span>
-                    <div class="progress-value">Principiante</div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <h3 class="habilidades-h3">SPRINGBOOT</h3>
-                <div class="progress blue">
-                    <span class="progress-left">
-                        <span class="progress-bar"></span>
-                    </span>
-                    <span class="progress-right">
-                        <span class="progress-bar"></span>
-                    </span>
-                    <div class="progress-value">Principiante</div>
-                </div>
-            </div>
+<div class="row">
+    <h2 class="titulo-habilidades">HABILIDADES ADQUIRIDAS</h2>
+        <div class="text-center col-md-3 col-sm-6">
+            <circle-progress
+                [percent]="40"
+                [radius]="100"
+                [showUnits]="false"
+                [title]="'HTML5'"
+                [titleColor]="'#FA979F'"
+                [titleFontSize]="'16px'"
+                [titleFontWeight]="'700'"
+                [showSubtitle]="false"
+                [outerStrokeWidth]="10"
+                [innerStrokeWidth]="8"
+                [outerStrokeColor]="'#FA979F'"
+                [innerStrokeColor]="'#e2e2e3'"
+                [animation]="true"
+                [animationDuration]="300"
+            ></circle-progress>
         </div>
-    </div>
-</section>
+        
+        <div class="text-center col-md-3 col-sm-6">
+            <circle-progress
+                [percent]="40"
+                [radius]="100"
+                [showUnits]="false"
+                [title]="'CSS'"
+                [titleColor]="'#FA979F'"
+                [titleFontSize]="'16px'"
+                [titleFontWeight]="'700'"
+                [showSubtitle]="false"
+                [outerStrokeWidth]="10"
+                [innerStrokeWidth]="8"
+                [outerStrokeColor]="'#FA979F'"
+                [innerStrokeColor]="'#e2e2e3'"
+                [animation]="true"
+                [animationDuration]="300"
+            ></circle-progress>
+        </div>
+
+        <div class="text-center col-md-3 col-sm-6">
+            <circle-progress
+                [percent]="40"
+                [radius]="100"
+                [showUnits]="false"
+                [title]="'JAVASCRIP'"
+                [titleColor]="'#FA979F'"
+                [titleFontSize]="'16px'"
+                [titleFontWeight]="'700'"
+                [showSubtitle]="false"
+                [outerStrokeWidth]="10"
+                [innerStrokeWidth]="8"
+                [outerStrokeColor]="'#FA979F'"
+                [innerStrokeColor]="'#e2e2e3'"
+                [animation]="true"
+                [animationDuration]="300"
+            ></circle-progress>
+        </div>
+
+        <div class="text-center col-md-3 col-sm-6">
+            <circle-progress
+                [percent]="40"
+                [radius]="100"
+                [showUnits]="false"
+                [title]="'TYPESCRIPT'"
+                [titleColor]="'#FA979F'"
+                [titleFontSize]="'16px'"
+                [titleFontWeight]="'700'"
+                [showSubtitle]="false"
+                [outerStrokeWidth]="10"
+                [innerStrokeWidth]="8"
+                [outerStrokeColor]="'#FA979F'"
+                [innerStrokeColor]="'#e2e2e3'"
+                [animation]="true"
+                [animationDuration]="300"
+            ></circle-progress>
+        </div>
+
+        <div class="text-center col-md-3 col-sm-6">
+            <circle-progress
+                [percent]="40"
+                [radius]="100"
+                [showUnits]="false"
+                [title]="'ANGULAR'"
+                [titleColor]="'#FA979F'"
+                [titleFontSize]="'16px'"
+                [titleFontWeight]="'700'"
+                [showSubtitle]="false"
+                [outerStrokeWidth]="10"
+                [innerStrokeWidth]="8"
+                [outerStrokeColor]="'#FA979F'"
+                [innerStrokeColor]="'#e2e2e3'"
+                [animation]="true"
+                [animationDuration]="300"
+            ></circle-progress>
+        </div>
+
+        <div class="text-center col-md-3 col-sm-6">
+            <circle-progress
+                [percent]="40"
+                [radius]="100"
+                [showUnits]="false"
+                [title]="'MYSQL'"
+                [titleColor]="'#FA979F'"
+                [titleFontSize]="'16px'"
+                [titleFontWeight]="'700'"
+                [showSubtitle]="false"
+                [outerStrokeWidth]="10"
+                [innerStrokeWidth]="8"
+                [outerStrokeColor]="'#FA979F'"
+                [innerStrokeColor]="'#e2e2e3'"
+                [animation]="true"
+                [animationDuration]="300"
+            ></circle-progress>
+        </div>
+
+        <div class="text-center col-md-3 col-sm-6">
+            <circle-progress
+                [percent]="40"
+                [radius]="100"
+                [showUnits]="false"
+                [title]="'JAVA'"
+                [titleColor]="'#FA979F'"
+                [titleFontSize]="'16px'"
+                [titleFontWeight]="'700'"
+                [showSubtitle]="false"
+                [outerStrokeWidth]="10"
+                [innerStrokeWidth]="8"
+                [outerStrokeColor]="'#FA979F'"
+                [innerStrokeColor]="'#e2e2e3'"
+                [animation]="true"
+                [animationDuration]="300"
+            ></circle-progress>
+        </div>
+
+        <div class="text-center col-md-3 col-sm-6">
+            <circle-progress
+                [percent]="40"
+                [radius]="100"
+                [showUnits]="false"
+                [title]="'SPRINGBOOT'"
+                [titleColor]="'#FA979F'"
+                [titleFontSize]="'16px'"
+                [titleFontWeight]="'700'"
+                [showSubtitle]="false"
+                [outerStrokeWidth]="10"
+                [innerStrokeWidth]="8"
+                [outerStrokeColor]="'#FA979F'"
+                [innerStrokeColor]="'#e2e2e3'"
+                [animation]="true"
+                [animationDuration]="300"
+            ></circle-progress>
+        </div>

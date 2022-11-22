@@ -1,8 +1,55 @@
+
 {
-    "name": "Sobre Mi",
-    "titulacion": "Soy Profesora, Publicista, Programadora y Desarrolladora Web.",
+    "name": "Soy Micaela Montali",
+    "ocupation": "Full Stack Developer Jr.",
+    "fotoPersonal": "./assets/mica_foto2.png",
+    "educacion": [
+        {
+            "img": "./assets/logo-metro.png",
+            "titulo":"Técnica Superior en Publicidad",
+            "institucion": "La Metro. Escuela de Comunicación Audiovisual",
+            "duracion":"2006 - 2009"
+        },
+        {
+            "img": "./assets/logo_ena2.png",
+            "titulo":"Profesora de Educación Inicial",
+            "institucion": "Escuela Normal Superior, Dr. Nicolás Avellaneda",
+            "duracion":"2010 - 2013"
+        },
+        {
+            "img": "./assets/logo_ispc.png",
+            "titulo":"Técnica Superior en Programación y Desarrollo Web",
+            "institucion": "ISPC, Instituto Superior Politécnico de Córdoba",
+            "duracion":"2020 - Actualidad. (Primer Año Completo)"
+        },
+        {
+            "img": "./assets/logo_argprog.png",
+            "titulo":"Programador Web Full Stack Jr.",
+            "institucion": "Ministerio de Desarrollo Argentino - INTI",
+            "duracion":"2022 - 2023"
+        }
+    ],
 
-
-
-    "fotografiaPersonal":"./assets/mica_foto2.png"
+    "experiencia": [
+        {
+            "img": "./assets/logo_ena2.png",
+            "lugar":"Escuela Normal Superior, Dr. Nicolás Avellaneda",
+            "tiempo": "01 de Junio de 2010 a 01 de Agosto de 2021.",
+            "cargo":"Profesora de Educación Tecnológica en nivel primario y en 1º y 2º año de Nivel Secundario."
+        },
+        {
+            "img": "./assets/logo_fasta.png",
+            "lugar":"FASTA: Inmaculada Concepción",
+            "tiempo": "07 de Marzo de 2014 a la actualidad",
+            "cargo":"Profesora de Formación Doctrinal en 1º, 2º y 3º año de Nivel Secundario. y Profesora de Lenguaje Digital, Profesora de Práctica Docente y Profesora de Aula Taller en el Profesorado de Educación Tecnológica."
+           
+        },
+        {
+            "img": "./assets/logo_craft.png",
+            "lugar":"Craft. Taller de Diseño",
+            "tiempo": "08 de Diciembre a la actualidad",
+            "cargo":"Creación de Marca Craft para el desarrollo de tareas de diseño y publicidad de forma Freelance."
+        }
+        
+    ]
 }
